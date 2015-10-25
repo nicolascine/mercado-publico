@@ -5,6 +5,9 @@ angular.module('mercadoPublicoApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },{
+      'title': 'Licitaciones',
+      'link': '/bids'
     }];
 
     $scope.isCollapsed = true;
