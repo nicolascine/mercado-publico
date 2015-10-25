@@ -1,17 +1,23 @@
 'use strict';
 
 angular.module('mercadoPublicoApp', [
+  //Defaults from Yeoman
   'ngCookies',
   'ngResource',
   'ngSanitize',
   'btford.socket-io',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  //Loading bar
+  'angular-loading-bar', 
+  'ngAnimate',
+  //Angular material
+  'ngMaterial',
+  'ngMessages'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
       .otherwise('/');
-
     $locationProvider.html5Mode(true);
     $httpProvider.interceptors.push('authInterceptor');
   })
