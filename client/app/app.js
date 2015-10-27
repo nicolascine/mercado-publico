@@ -13,7 +13,9 @@ angular.module('mercadoPublicoApp', [
   'ngAnimate',
   //Angular material
   'ngMaterial',
-  'ngMessages'
+  'ngMessages',
+  //nvD3
+  'nvd3'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
